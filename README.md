@@ -6,8 +6,8 @@ This project was built using React JS and CSS
 
 In this project, I learnt the following:
 
-“*” React Functional components and their reusability
-“*” React Props, Destructuring and Array Mapping
+* React Functional components and their reusability
+* React Props, Destructuring and Array Mapping
 “*” React file and folder structure
 “*” Fundamental CSS properties to master flex & grid
 “*” Fundamentals of the CSS BEM Model
