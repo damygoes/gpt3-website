@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import "./navbar.css";
