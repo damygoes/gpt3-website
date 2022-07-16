@@ -14,7 +14,8 @@ AOS.init(
 
 const WhatGPT3 = () => {
   return (
-    <div className="gpt3__whatgpt3 section__margin" id="wgpt3" data-aos="fade-up"
+  
+    <div className="gpt3__whatgpt3 section__margin"  data-aos="fade-up"
     >
       <div className="gpt3__whatgpt3-feature">
         <Feature
@@ -43,6 +44,8 @@ const WhatGPT3 = () => {
         />
       </div>
     </div>
+ 
+
   );
 };
 

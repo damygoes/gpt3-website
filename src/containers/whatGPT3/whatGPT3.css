@@ -1,8 +1,10 @@
 .gpt3__whatgpt3 {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	padding: 2rem;
 	background: var(--color-footer);
+	margin: 0;
 
 	/* ff 3.6+ */
 	background: -moz-radial-gradient(
@@ -66,7 +68,6 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-
 	margin: 4rem 0 2rem;
 }
 

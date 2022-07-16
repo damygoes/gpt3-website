@@ -1,6 +1,6 @@
 .gpt3__header {
 	display: flex;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 .gpt3__header-content {

@@ -3,6 +3,7 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import "./navbar.css";
 import { useEffect } from "react";
+import { useRef } from "react";
 
 // Notice that all classnames are implemented based on the BEM framework - Block Element Modifier
 
@@ -42,7 +43,7 @@ const Navbar = () => {
 
  //navbar scroll changeBackground function
  const changeBackground = () => {
-  console.log(window.scrollY)
+  // console.log(window.scrollY)
   if (window.scrollY >= 66) {
     setNavbar(true)
   } else {
@@ -50,7 +51,15 @@ const Navbar = () => {
   }
 }
 
+// const navbarHeight = useRef()
+// const navbarOffsetHeight = useRef(navbarHeight.current.offsetHeight)
+
 useEffect(()=>{
+  // console.log(navbarHeight)
+  // let navbarOffsetHeight = navbarHeight.current.offsetHeight
+  // document.documentElement.style.setProperty("--scroll-padding", navbarOffsetHeight + 5 + "px")
+  // console.log(navbarHeight.current.offsetHeight)
+  // console.log(navbarOffsetHeight)
   window.addEventListener("scroll", changeBackground)
 },[])
 
@@ -60,7 +69,7 @@ useEffect(()=>{
     <nav className={navbar ? "gpt3__navbar  active" : "gpt3__navbar"} >
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
-          <img src={logo} alt="logo" />
+          <a href="/"><img src={logo} alt="logo" /></a>
         </div>
         <div className="gpt3__navbar-links_container">
           <Menu />

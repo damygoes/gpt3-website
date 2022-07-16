@@ -6,7 +6,6 @@
 	position: fixed;
 	width: 100vw;
 	z-index: 999;
-	/* border: 1px solid red; */
 }
 
 /* Nactive Active State */
@@ -51,6 +50,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	gap: 1rem;
 }
 
 .gpt3__navbar-links_container p,
@@ -145,5 +145,6 @@
 	}
 	.gpt3__navbar-menu_container-links-sign {
 		display: block;
+		gap: 1rem;
 	}
 }
