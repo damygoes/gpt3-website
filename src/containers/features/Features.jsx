@@ -2,6 +2,15 @@ import React from "react";
 import { Feature } from "../../components";
 import "./features.css";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+
+AOS.init(
+  {offset: 400,
+    duration: 1000,}
+);
+
 const featuresData = [
   {
     title: "Improving end distrusts instantly",
@@ -22,7 +31,8 @@ const featuresData = [
 ];
 const Features = () => {
   return (
-    <div className="gpt3__features section__padding" id="features">
+    <div className="gpt3__features section__padding" id="features" data-aos="fade-up"
+    >
       <div className="gpt3__features-heading">
         <h1 className="gradient__text">
           The Future is Now and You Just Need to Realize It. Step into Future

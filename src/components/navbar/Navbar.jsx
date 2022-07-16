@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import "./navbar.css";
+import { useEffect } from "react";
 
 // Notice that all classnames are implemented based on the BEM framework - Block Element Modifier
 
@@ -9,7 +11,7 @@ const Menu = () => (
   <>
     <p>
       {" "}
-      <a href="#home">Home</a>{" "}
+      <a href="/">Home</a>{" "}
     </p>
     <p>
       {" "}
@@ -30,11 +32,33 @@ const Menu = () => (
   </>
 );
 
+
+
+
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+   //navbar scroll when active state
+ const [navbar, setNavbar] = useState(false)
+
+ //navbar scroll changeBackground function
+ const changeBackground = () => {
+  console.log(window.scrollY)
+  if (window.scrollY >= 66) {
+    setNavbar(true)
+  } else {
+    setNavbar(false)
+  }
+}
+
+useEffect(()=>{
+  window.addEventListener("scroll", changeBackground)
+},[])
+
+
 
   return (
-    <div className="gpt3__navbar">
+    <nav className={navbar ? "gpt3__navbar  active" : "gpt3__navbar"} >
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
           <img src={logo} alt="logo" />
@@ -73,7 +97,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </div>
+    </nav>
   );
 };
 

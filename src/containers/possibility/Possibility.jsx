@@ -3,9 +3,19 @@ import possibilityImage from "../../assets/possibility.png";
 
 import "./possibility.css";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+
+AOS.init(
+  {offset: 400,
+    duration: 1000,}
+);
+
 const Possibility = () => {
   return (
-    <div className="gpt3__possibility section__padding" id="possibility">
+    <div className="gpt3__possibility section__padding" id="possibility" data-aos="fade-up"
+    >
       <div className="gpt3__possibility-image">
         <img src={possibilityImage} alt="possibility" />
       </div>

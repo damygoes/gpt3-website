@@ -2,9 +2,19 @@ import React from "react";
 import gpt3Logo from "../../assets/logo.svg";
 import "./footer.css";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+
+AOS.init(
+  {offset: 400,
+    duration: 1000,}
+);
+
 const Footer = () => {
   return (
-    <div className="gpt3__footer section__padding">
+    <div className="gpt3__footer section__padding" data-aos="fade-up"
+    >
       <div className="gpt3__footer-heading">
         <h1 className="gradient__text">
           Do you want to step in to the future before others

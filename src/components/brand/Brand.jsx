@@ -3,9 +3,19 @@ import { google, slack, atlassian, dropbox, shopify } from "./imports";
 
 import "./brand.css";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+
+AOS.init(
+  {offset: 400,
+    duration: 1000,}
+);
+
 const Brand = () => {
   return (
-    <div className="gpt3__brand section__padding">
+    <div className="gpt3__brand section__padding" data-aos="fade-right"
+    >
       <div>
         <img src={google} alt="google" />
       </div>

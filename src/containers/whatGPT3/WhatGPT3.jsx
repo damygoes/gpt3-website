@@ -2,9 +2,20 @@ import React from "react";
 import { Feature } from "../../components";
 import "./whatGPT3.css";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
+
+AOS.init(
+  {offset: 400,
+    duration: 1000,}
+);
+
+
 const WhatGPT3 = () => {
   return (
-    <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
+    <div className="gpt3__whatgpt3 section__margin" id="wgpt3" data-aos="fade-up"
+    >
       <div className="gpt3__whatgpt3-feature">
         <Feature
           title="What is GPT3?"
