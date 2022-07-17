@@ -3,6 +3,7 @@
 #### A mordern static landing page
 
 A mordern landing page designed for an Artificial Intelligence company
+Live Website: http://gpt3-website-azure.vercel.app/
 
 ## Tools
 
