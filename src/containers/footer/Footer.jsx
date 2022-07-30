@@ -11,6 +11,10 @@ AOS.init(
     duration: 1000,}
 );
 
+const handleRequestAccess = () => {
+  alert("Request received! We will get back to you soon")
+}
+
 const Footer = () => {
   return (
     <div className="gpt3__footer section__padding" data-aos="fade-up"
@@ -22,7 +26,7 @@ const Footer = () => {
       </div>
 
       <div className="gpt3__footer-btn">
-        <p>Request Early Access</p>
+        <p onClick={handleRequestAccess}>Request Early Access</p>
       </div>
 
       <div className="gpt3__footer-links">

@@ -10,6 +10,10 @@ html {
 
 body {
 	background: var(--color-bg);
+	overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+	display: none;
 }
 
 a {
