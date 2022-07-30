@@ -1,14 +1,13 @@
 .gpt3__blog {
 	display: flex;
 	flex-direction: column;
-	/* height: 100vh; */
-	margin-top: 16rem;
 }
 
 .gpt3__blog-heading {
 	width: 100%;
 	text-align: left;
 	margin-bottom: 5rem;
+	margin-top: 16rem;
 }
 
 .gpt3__blog-heading h1 {

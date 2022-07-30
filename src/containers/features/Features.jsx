@@ -31,7 +31,7 @@ const featuresData = [
 ];
 const Features = () => {
   return (
-    <div className="gpt3__features section__padding" id="features" data-aos="fade-up"
+    <div className="gpt3__features section__padding section__margin" id="features" data-aos="fade-up"
     >
       <div className="gpt3__features-heading">
         <h1 className="gradient__text">

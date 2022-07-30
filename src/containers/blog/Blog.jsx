@@ -14,7 +14,7 @@ AOS.init(
 
 const Blog = () => {
   return (
-    <div className="gpt3__blog section__padding" id="blog" data-aos="zoom-in"
+    <div className="gpt3__blog section__padding section__margin" id="blog" data-aos="zoom-in"
     >
       <div className="gpt3__blog-heading">
         <h1 className="gradient__text">

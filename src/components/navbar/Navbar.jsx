@@ -3,31 +3,27 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
 import "./navbar.css";
 import { useEffect } from "react";
-import { useRef } from "react";
 
 // Notice that all classnames are implemented based on the BEM framework - Block Element Modifier
 
 const Menu = () => (
   <>
-    <p>
-      {" "}
-      <a href="/">Home</a>{" "}
+    {/* <p>
+      <a href="/">Home</a>
+    </p> */}
+    <p>  
+      <a href="/#wgpt3">What is GPT3?</a>
     </p>
     <p>
-      {" "}
-      <a href="#wgpt3">What is GPT3?</a>{" "}
+      <a href="/#possibility">Open AI</a>
     </p>
     <p>
-      {" "}
-      <a href="#possibility">Open AI</a>{" "}
+      
+      <a href="/#features">Case Studies</a>
     </p>
     <p>
-      {" "}
-      <a href="#features">Case Studies</a>{" "}
-    </p>
-    <p>
-      {" "}
-      <a href="#blog">Library</a>{" "}
+      
+      <a href="/#blog">Library</a>
     </p>
   </>
 );
@@ -75,10 +71,10 @@ useEffect(()=>{
           <Menu />
         </div>
       </div>
-      <div className="gpt3__navbar-sign">
+      {/* <div className="gpt3__navbar-sign">
         <p>Sign in</p>
         <button type="button">Sign up</button>
-      </div>
+      </div> */}
       <div className="gpt3__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
@@ -97,10 +93,10 @@ useEffect(()=>{
           <div className="gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
               <Menu />
-              <div className="gpt3__navbar-menu_container-links-sign">
+              {/* <div className="gpt3__navbar-menu_container-links-sign">
                 <p>Sign in</p>
                 <button type="button">Sign up</button>
-              </div>
+              </div> */}
             </div>
           </div>
         )}
